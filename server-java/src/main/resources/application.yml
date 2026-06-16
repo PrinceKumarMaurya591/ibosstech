@@ -1,0 +1,22 @@
+server:
+  port: 3001
+
+market:
+  data:
+    # Data source: 'okx' (default) or 'binance'
+    # Binance is more widely accessible from most networks
+    source: binance
+    # Refresh interval for top 20 pairs (milliseconds)
+    refresh-interval-ms: 10000
+    # OKX REST API base URL
+    okx-rest-base: https://www.okx.com
+    # OKX WebSocket URL
+    okx-ws-url: wss://ws.okx.com:8443/ws/v5/public
+
+logging:
+  level:
+    com.marketdata: INFO
+
+spring:
+  main:
+    banner-mode: off

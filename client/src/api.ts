@@ -3,7 +3,7 @@
 // ============================================================
 
 const API_BASE = 'http://localhost:3001';
-const WS_URL = 'ws://localhost:3002';
+const WS_URL = 'ws://localhost:3001/ws/market';
 
 export interface TickerData {
   symbol: string;
